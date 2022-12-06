@@ -16,8 +16,19 @@ h4 {font-family: Roboto; }
 .about{
   display: flex;
   flex-direction: row;
-  padding: 100px 200px 100px 200px;
+  padding: 100px 0px 100px 0px;
   align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+@media (max-width: 700px){
+	.about{
+		width: 100%;
+    display: flex;
+    flex-direction: column;
+	}
 }
 
 .about-text{
